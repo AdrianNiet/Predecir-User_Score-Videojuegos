@@ -4,6 +4,18 @@
 
 Trabajo de modelo de prediccion sobre videojuegos.
 
-En este trabajo vamos a manipular bases de datos para poder realizar un modelo predictivo de machine learning que pueda satisfacer una necesidad y ayudar a un posible cliente.
+En este trabajo vamos a manipular bases de datos para poder realizar un modelo predictivo de machine learning que pueda satisfacer una necesidad y ayudar a un posible cliente, realizando prediciones sobre la nota de reviews de usuario que tendra un juego, usando datos de Metacritic.
 
-Trabajo aun en progreso.
+# Resumen
+
+Primero empece analizando una dataframe de videojuegos con el objetivo de desarrollar un modelo para poder predecir el precio de un videojuego segun sus caracteristicas.
+
+Sin embargo, tras realizar un exhaustivo trabajo de Feature engineering y limpieza de datos, no se pudieron encontrar correlaciones suficientes para que el modelo pudiese aprender correctamente, por lo que se decidio cambiar la perspectiva.
+
+Se cambio a una database de juegos y caracteristicas sacadas de la pagina de Metacritic, se realizo limpieza y se pudo encontrar correlaciones sufientes para construir un buen modelo de prediccion.
+
+# Objetivo
+
+Con un modelo de predicciones de reviews, se pueden dar los datos de un videojuego, estimaciones y mas caracteristicas, de esta forma se puede saber si la nota que le daran los usuarios al juego, con ello, ayudamos al cliente a poder realizar un estudio bien rapido, ahorrando tiempo y recursos que pueden destinar a otros apartados.
+
+pendiente de revision de readme
