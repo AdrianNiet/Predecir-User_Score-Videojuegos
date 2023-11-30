@@ -1,0 +1,9 @@
+Bienvenido a mi proyecto de machine learning.
+
+Los requisitos son los siguientes:
+
+Python 3.11.5 o superior.
+
+tener streamlit instalado (Se puede instalar con pip install streamlit, puedes ir a /src/instalador.py y instalar automaticamente todo).
+
+Cuando quieras ejecutar la interface web, ejecuta la app.py desde la CMD con streamlit run app.py

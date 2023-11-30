@@ -46,6 +46,17 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return  
 
+st.markdown(
+    """
+    <style>
+        .sidebar-content .stSelectbox label span {{
+            color: white;  
+            text-shadow: -1px -1px 1px black, 1px -1px 1px black, -1px 1px 1px black, 1px 1px 1px black;  
+        }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 bg = '../docs/panda.png'
 sidebar_bg(bg)
@@ -311,7 +322,9 @@ elif seleccion == "Dataframe Reviews":
             st.success(f"Los resultados de la prediccion son:\n Margen de error de {round(mean_absolute_error(obj_test, pred6),3)} \n porcentaje de fallo de {round(mean_absolute_percentage_error(obj_test, pred6)*100,3)}%")
 
     with st.expander("Descripcion de nuestro modelo final."):
-     
+        train = pd.read_csv("../data/train/train.csv", sep=",")
+        test = pd.read_csv("../data/test/test.csv", sep=",")
+        
         st.write("En esta seccion, vamos a profundizar un poco en nuestra dataframe y modelo.")
         with open("../models/modelo_regression_RFR.pkl", "rb") as modelo:
             rfr_model = pickle.load(modelo)
@@ -340,7 +353,7 @@ elif seleccion == "Dataframe Reviews":
         st.write("EL historico contiene la cantidad de scores y su nota.")
         mapa = pd.DataFrame({"predicciones":pred3, "variable objetivo":obj_test})
 
-        st.write("Vamos a hacer una comparación, primero veamos un scatterplot del primer modelo.   ")
+        st.write("Vamos a hacer una comparación, primero veamos un scatterplot del modelo de Regression Lineal.")
         imagen = Image.open("../docs/comparativa.png")
         st.image(imagen, caption='Historico de user_score', use_column_width=True)
         st.write("Debajo tenemos otras 2 graficas, ambas son un scatterplot en el que podemos ver la similitud del modelo con la variable objetivo.")
