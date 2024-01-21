@@ -14,8 +14,18 @@ Sin embargo, tras realizar un exhaustivo trabajo de Feature engineering y limpie
 
 Se cambio a una database de juegos y caracteristicas sacadas de la pagina de Metacritic, se realizo limpieza y se pudo encontrar correlaciones sufientes para construir un buen modelo de prediccion.
 
+Para la presentación, se realizo un streamlit con el objetivo de poder probar los modelos y ver sus porcentajes de precisión y margen de error.
+
 # Objetivo
 
 Con un modelo de predicciones de reviews, se pueden dar los datos de un videojuego, estimaciones y mas caracteristicas, de esta forma se puede saber si la nota que le daran los usuarios al juego, con ello, ayudamos al cliente a poder realizar un estudio bien rapido, ahorrando tiempo y recursos que pueden destinar a otros apartados.
 
-pendiente de revision de readme
+# Estructura.
+
+- app: Donde encontraras la app de streamlit.
+- Data: donde estan todos los datos, separados por raw, limpiados, train y test para el modelo de machine learning.
+- Docs: Imagenes u otros archivos usados para presentación o diseño de app.
+- Models: Aqui estan todos los modelos usados y guardados para poder ser importados.
+- Notebooks: Todos los jupyter usados en el trabajo.
+- Los archivos .py para poder ejecutar toda la limpieza de datos y creación de modelos.
+
